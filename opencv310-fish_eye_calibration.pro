@@ -4,3 +4,8 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += main.cpp
+
+unix{
+    CONFIG += link_pkgconfig
+    PKGCONFIG += opencv
+}
